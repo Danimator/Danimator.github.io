@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'tisaprobold';
+    src: url('tisapro-bold-webfont.eot');
+    src: url('tisapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-bold-webfont.woff2') format('woff2'),
+         url('tisapro-bold-webfont.woff') format('woff'),
+         url('tisapro-bold-webfont.ttf') format('truetype'),
+         url('tisapro-bold-webfont.svg#tisaprobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaproitalicbold';
+    src: url('tisapro-boldita-webfont.eot');
+    src: url('tisapro-boldita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-boldita-webfont.woff2') format('woff2'),
+         url('tisapro-boldita-webfont.woff') format('woff'),
+         url('tisapro-boldita-webfont.ttf') format('truetype'),
+         url('tisapro-boldita-webfont.svg#tisaproitalicbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaproitalic';
+    src: url('tisapro-ita-webfont.eot');
+    src: url('tisapro-ita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-ita-webfont.woff2') format('woff2'),
+         url('tisapro-ita-webfont.woff') format('woff'),
+         url('tisapro-ita-webfont.ttf') format('truetype'),
+         url('tisapro-ita-webfont.svg#tisaproitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisapromedium';
+    src: url('tisapro-medi-webfont.eot');
+    src: url('tisapro-medi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-medi-webfont.woff2') format('woff2'),
+         url('tisapro-medi-webfont.woff') format('woff'),
+         url('tisapro-medi-webfont.ttf') format('truetype'),
+         url('tisapro-medi-webfont.svg#tisapromedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaproitalicmedium';
+    src: url('tisapro-mediita-webfont.eot');
+    src: url('tisapro-mediita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-mediita-webfont.woff2') format('woff2'),
+         url('tisapro-mediita-webfont.woff') format('woff'),
+         url('tisapro-mediita-webfont.ttf') format('truetype'),
+         url('tisapro-mediita-webfont.svg#tisaproitalicmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tisaproregular';
+    src: url('tisapro-regular-webfont.eot');
+    src: url('tisapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tisapro-regular-webfont.woff2') format('woff2'),
+         url('tisapro-regular-webfont.woff') format('woff'),
+         url('tisapro-regular-webfont.ttf') format('truetype'),
+         url('tisapro-regular-webfont.svg#tisaproregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
