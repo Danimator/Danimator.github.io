@@ -1,0 +1,53 @@
+/*
+	Font Families are:
+	DIN Pro:
+		DINPro
+		DINPro-Condensed
+	Tisa Pro:
+		tisaprobold
+		tisaproitalicbold
+		tisaproitalic
+		tisapromedium
+		tisaproitalicmedium
+		tisaproregular
+	Merriweather
+*/
+body, html{
+	margin: 0px;
+	color: rgb(48,48,48);
+}
+
+h1{
+	font-size: 60px;
+	font-family: DINPro;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 10px 0px 10px 0px;
+}
+
+h2{
+	font-size: 48px;
+	font-family: DINPro;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 10px 0px 10px 0px;
+}
+
+p{
+	font-size: 18px;
+	font-family: Merriweather;
+}
+
+.info{
+	font-family: tisaproregular;
+	font-size: 17px;
+	margin: 5px 0px 5px 1px;
+}
+
+#titleCard{
+	width: 60%;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+}
