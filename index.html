@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 		<title>Daniel Zhang's Platform</title>
 		
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
@@ -51,7 +52,6 @@
 								flag = true;
 								return true;
 							} else if(forward){
-								console.log(1);
 								message.innerHTML = message.innerHTML.substr(0,place-barlen);
 								message.innerHTML += messages[number].substr(place-barlen, 1) + bar;
 								setTimeout(function(){type(messages, number, forward);}, 110);
