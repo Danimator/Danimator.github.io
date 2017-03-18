@@ -9,21 +9,64 @@
 		<link rel="stylesheet" type="text/css" href="fonts/Tisa Pro/tisa.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<script src="scripts/particles.min.js"></script>
+		<script src="scripts/jquery-3.2.0.min.js"></script>
 	</head>
 	
 	<body>
 		<script>
 			function unshift(){
 				document.getElementById("content").classList.remove("shift");
+				document.getElementById("menu").classList.remove("shift");
 				document.getElementById("menuButton").classList.remove("change");
 			}
 		</script>
+		<div id='menu'>
+			<div style="margin-top: 50px"></div>
+			<p class='link'><b>Home</b></p>
+			<p class='link'>About Me</p>
+			<p class='link'>Projects</p>
+			<p class='link'>Contact Me</p>
+		</div>
 		<div id='content'>
 			<div id="title" onclick="unshift();">
 				<div id="particles-js"></div>
 				<div id="titleCard">
 					<h2>Daniel Zhang</h2>
-					<p class="info">Software Developer</p>
+					<p id='typeOut' class="info type"></p>
+					<script>
+						var message = document.getElementById("typeOut");
+						var messages = ["Software Developer", "Web Developer", "Artist"];
+						var current = message.innerHTML;
+						var bar = "<b class='typeline'>|</b>";
+						var barlen = bar.length;
+						var flag = false;
+						function type(messages, number, forward){
+							var length = messages.length;
+							var place = message.innerHTML.length;
+		
+							if(place-barlen == messages[number].length && forward == true){
+								forward = false;
+								setTimeout(function(){type(messages, number, false);}, 500*messages[number].length);
+							} else if(place == barlen && forward == false){
+								flag = true;
+								return true;
+							} else if(forward){
+								console.log(1);
+								message.innerHTML = message.innerHTML.substr(0,place-barlen);
+								message.innerHTML += messages[number].substr(place-barlen, 1) + bar;
+								setTimeout(function(){type(messages, number, forward);}, 110);
+							} else{
+								message.innerHTML = message.innerHTML.substr(0, place-(1+barlen));
+								message.innerHTML += bar;
+								setTimeout(function(){type(messages, number, false);}, 60);
+							}
+						}
+						
+						var currentMessage = 0;
+						type(messages, currentMessage, true); currentMessage+=1;
+						var prev = 1;
+						setInterval(function(){if(flag == true){flag = false; type(messages, currentMessage, true); currentMessage = (currentMessage+1)%messages.length; (prev+1)%messages.length;}}, 500);
+					</script>
 					<hr>
 					<p>
 						Hi, I’m <b>Daniel</b>, a student at --- in <b>Vancouver, BC</b>. I love to create experiences with code, and here you’ll be able to explore some of my projects.
@@ -43,6 +86,7 @@
 				function toggle(x) {
 					x.classList.toggle("change");
 					document.getElementById("content").classList.toggle("shift");
+					document.getElementById("menu").classList.toggle("shift");
 				}
 			</script>
 			
@@ -51,8 +95,7 @@
 				<div class='bar2'></div>
 				<div class='bar3'></div>
 			</div>
-			<div id = "footer">
-			</div>
+			<div id = "footer"></div>
 		</div>
 	</body>
 </html>

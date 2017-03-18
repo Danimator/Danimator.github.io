@@ -158,6 +158,24 @@ hr{
 	cursor: pointer;
 }
 
+#menu{
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	position:fixed;
+	right: -250px;
+	width: 250px;
+	padding-left: 50px;
+	height: 100%;
+	background-color: rgb(254,254,254);
+	transition: 0.5s;
+	border-left: 1px solid rgb(200,200,200);
+}
+
+#menu.shift{
+	right: 0px;
+}
+
 .bar1, .bar2, .bar3{
 	width: 35px;
 	height: 5px;
@@ -191,6 +209,43 @@ hr{
 #content.shift{
 	right: 250px;
 }
+
+p.link{
+	font-family: DINPro;
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	cursor: pointer; 
+	transition: 0.4s;
+}
+
+p.link:hover{
+	color: rgb(220, 5, 10);
+}
+
+.typeline{
+    -webkit-animation: blink 0.6s infinite;
+    -moz-animation: blink 0.6s infinite;
+    animation: blink 0.6s infinite;
+	margin-left: 2px;
+	color: rgb(230, 10, 12);
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 @media screen and (max-width: 1200px) {
     #titleCard{
 		width: 50%;
