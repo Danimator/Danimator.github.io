@@ -251,6 +251,18 @@ p.link:hover{
     100% { opacity:1; }
 }
 
+.menuOffset{
+	margin-top: 50px;
+}
+@media screen and (max-height: 350px) {
+	#menuButton{
+		top: 30px;
+	}
+	.menuOffset{
+		margin-top : 30px;
+	}
+}
+
 @media screen and (max-width: 1200px) {
     #titleCard{
 		width: 50%;
