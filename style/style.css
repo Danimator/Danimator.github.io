@@ -25,7 +25,10 @@ body, html{
 	-webkit-font-smoothing: antialiased;
 	-webkit-filter: blur(0.000001px);
 
+	transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	will-change: transform;
 }
 
 @keyframes fadein {
