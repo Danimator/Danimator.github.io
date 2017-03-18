@@ -87,6 +87,10 @@ p{
 	-moz-border-radius: 15px;
 	border-radius: 15px; 
 
+	-webkit-font-smoothing: antialiased;
+	-webkit-filter: blur(0.000001px);
+
+	 -webkit-backface-visibility: hidden;
 }
 
 
@@ -164,6 +168,7 @@ hr{
     -webkit-box-sizing: border-box;
 	position:fixed;
 	right: -250px;
+	
 	width: 250px;
 	padding-left: 50px;
 	height: 100%;
@@ -273,11 +278,29 @@ p.link:hover{
 	.button1{
 		font-size: 14px;
 	}
+	p.link{
+		font-size: 18px;
+		argin-bottom: 17px;
+	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 640px){
 	#particles-js{
 		display: none;
+	}
+	h2{
+		font-size: 23px;
+	}
+	.info{
+		font-size: 12px;
+	}
+	p{
+		font-size: 10px;
+		line-height: 18px;
+	}
+	p.link{
+		font-size: 16px;
+		argin-bottom: 15px;
 	}
 }
 
