@@ -16,10 +16,12 @@ function toggle(x) {
 	document.getElementById("menu").classList.toggle("shift");
 }
 
-$("#content").on("swipeleft",function(){
+var hammer = new Hammer(document.body);
+
+hammer.on('swipeleft', function(ev) {
 	shift();
 });
 
-$("#content").on("swiperight",function(){
+hammer.on('swiperight', function(ev) {
 	unshift();
 });

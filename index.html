@@ -11,17 +11,18 @@
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<script src="scripts/particles.min.js"></script>
 		<script src="scripts/jquery-3.2.0.min.js"></script>
+		<script src="scripts/hammer.min.js"></script>
 	</head>
 	
 	<body>
-		<div id='menu'>
+		<div id='menu' class="">
 			<div class='menuOffset'></div>
 			<p class='link'><b>Home</b></p>
 			<p class='link'>About Me</p>
 			<p class='link'>Projects</p>
 			<p class='link'>Contact Me</p>
 		</div>
-		<div id='content'>
+		<div id='content' class="">
 			<div id="title" onclick="unshift();">
 				<div id="particles-js"></div>
 				<div id="titleCard">
@@ -91,7 +92,7 @@
 				</script>
 			</div>
 			
-			<div id="menuButton" onclick="toggle(this);">
+			<div id="menuButton" onclick="toggle(this);" class="">
 				<div class='bar1'></div>
 				<div class='bar2'></div>
 				<div class='bar3'></div>
