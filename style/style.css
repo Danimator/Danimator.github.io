@@ -254,14 +254,6 @@ p.link:hover{
 .menuOffset{
 	margin-top: 50px;
 }
-@media screen and (max-height: 350px) {
-	#menuButton{
-		top: 30px;
-	}
-	.menuOffset{
-		margin-top : 30px;
-	}
-}
 
 @media screen and (max-width: 1200px) {
     #titleCard{
@@ -315,6 +307,39 @@ p.link:hover{
 		argin-bottom: 15px;
 	}
 }
+
+@media screen and (max-width: 420px){
+	#titleMenu{
+		height: 30px;
+	}
+	.button1{
+		padding-top: 9px;
+		padding-bottom: 6px;
+		height: 15px;
+		font-size: 10px;
+	}
+	#menuButton{
+		right: 18px;
+	}
+}
+@media screen and (max-height: 350px) {
+	#menuButton{
+		top: 30px;
+	}
+	.menuOffset{
+		margin-top : 30px;
+	}
+	#titleMenu{
+		height: 30px;
+	}
+	.button1{
+		padding-top: 9px;
+		padding-bottom: 6px;
+		height: 15px;
+		font-size: 10px;
+	}
+}
+
 
 #footer{
 	padding-top: 1px;
