@@ -47,12 +47,18 @@
 						if(isMobile){
 							document.getElementById("typeOut").innerHTML = "Software Developer<b class='typeline'>|</b>";
 						} else {
+							
+							
 							var message = document.getElementById("typeOut");
 							var messages = ["Software Developer", "Web Developer", "Artist"];
 							var current = message.innerHTML;
 							var bar = "<b class='typeline'>|</b>";
 							var barlen = bar.length;
 							var flag = false;
+							
+							var currentMessage = 0;
+							type(messages, currentMessage, true); currentMessage+=1;
+							
 							function type(messages, number, forward){
 								var length = messages.length;
 								var place = message.innerHTML.length;
@@ -62,6 +68,8 @@
 									setTimeout(function(){type(messages, number, false);}, 500*messages[number].length);
 								} else if(place == barlen && forward == false){
 									flag = true;
+									
+									setTimeout(function(){type(messages, currentMessage, true); currentMessage = (currentMessage+1)%messages.length;}, 200);
 									return true;
 								} else if(forward){
 									message.innerHTML = message.innerHTML.substr(0,place-barlen);
@@ -73,11 +81,6 @@
 									setTimeout(function(){type(messages, number, false);}, 60);
 								}
 							}
-							
-							var currentMessage = 0;
-							type(messages, currentMessage, true); currentMessage+=1;
-							var prev = 1;
-							setInterval(function(){if(flag == true){flag = false; type(messages, currentMessage, true); currentMessage = (currentMessage+1)%messages.length; (prev+1)%messages.length;}}, 2500);
 						}
 					</script>
 					<hr>
