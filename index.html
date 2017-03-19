@@ -16,6 +16,7 @@
 	</head>
 	
 	<body>
+		<noscript><link rel="stylesheet" type="text/css" href="style/noscript.css"></noscript>
 		<div id='menu' class="">
 			<div class='menuOffset'></div>
 			<p class='link'><b>Home</b></p>
@@ -24,8 +25,8 @@
 			<p class='link'>Contact Me</p>
 			<div class='menuFooter'>
 				<hr style='margin-bottom: 10px;'>
-				<p class='link'>email</p>
-				<p class='link'>github</p>
+				<p class='link' onclick="location.href='mailto:dzdesignsgraphics@gmail.com'">email</p>
+				<p class='link' onclick="location.href='https://github.com/Danimator'">github</p>
 			</div>
 		</div>
 		<div id='content' class="">
@@ -33,7 +34,7 @@
 				<div id="particles-js"></div>
 				<div id="titleCard">
 					<h2>Daniel Zhang</h2>
-					<p id='typeOut' class="info type"></p>
+					<p id='typeOut' class="info type">Software Developer<b class='typeline'>|</b></p>
 					<script>
 						// Special thanks to an answer by sweets-BlingBling on stackoverflow 
 						// at http://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-mobile-device-in-jquery for
@@ -47,7 +48,7 @@
 						if(isMobile){
 							document.getElementById("typeOut").innerHTML = "Software Developer<b class='typeline'>|</b>";
 						} else {
-							
+							document.getElementById("typeOut").innerHTML = "";
 							
 							var message = document.getElementById("typeOut");
 							var messages = ["Software Developer", "Web Developer", "Artist"];
