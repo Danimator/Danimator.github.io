@@ -404,9 +404,7 @@ p.link:hover{
 		transform: rotate(45deg) translate(-6px, -1px) ;
 	}
 	
-	.menuFooter{
-		bottom: 20px;
-	}
+
 }
 @media screen and (max-height: 350px) {
 	#menuButton{
