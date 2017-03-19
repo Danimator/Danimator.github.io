@@ -17,6 +17,11 @@ function toggle(x) {
 	document.getElementById("menu").classList.toggle("shift");
 }
 
+function link(linkto){
+	document.body.classList.toggle('fade');
+	setTimeout(function(){window.location.href = linkto;}, 620);
+}
+
 var hammer = new Hammer(document.body);
 
 hammer.on('swipeleft', function(ev) {
