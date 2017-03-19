@@ -239,7 +239,7 @@ p.link:hover{
 
 .menuFooter{
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	color: rgb(120,120,120);
 }
 
@@ -403,6 +403,10 @@ p.link:hover{
 		-webkit-transform: rotate(45deg) translate(-6px, -1px) ;
 		transform: rotate(45deg) translate(-6px, -1px) ;
 	}
+	
+	.menuFooter{
+		bottom: 20px;
+	}
 }
 @media screen and (max-height: 350px) {
 	#menuButton{
@@ -440,6 +444,9 @@ p.link:hover{
 	.change .bar3 {
 		-webkit-transform: rotate(45deg) translate(-8px, -4px) ;
 		transform: rotate(45deg) translate(-8px, -4px) ;
+	}
+	.menuFooter{
+		bottom: 20px;
 	}
 }
 
