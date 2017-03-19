@@ -237,6 +237,18 @@ p.link:hover{
 	color: rgb(220, 5, 10);
 }
 
+.menuFooter{
+	position: absolute;
+	bottom: 20px;
+	color: rgb(120,120,120);
+}
+
+.menuFooter > p.link{
+	font-size: 18px;
+	margin-bottom: 14px;
+	margin-top: 5px;
+}
+
 .typeline{
     -webkit-animation: blink 0.6s infinite;
     -moz-animation: blink 0.6s infinite;
@@ -295,6 +307,12 @@ p.link:hover{
 		font-size: 18px;
 		argin-bottom: 17px;
 	}
+	
+	.menuFooter > p.link{
+		font-size: 15px;
+		margin-bottom: 12px;
+		margin-top: 4px;
+	}
 }
 
 @media screen and (max-width: 640px){
@@ -315,6 +333,13 @@ p.link:hover{
 		font-size: 16px;
 		argin-bottom: 15px;
 	}
+	
+	.menuFooter > p.link{
+		font-size: 13px;
+		margin-bottom: 10px;
+		margin-top: 3px;
+	}
+
 	#menuButton{
 		width: 35px;
 		height: 30px;
