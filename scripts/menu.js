@@ -1,3 +1,4 @@
+delete Hammer.defaults.cssProps.userSelect;
 function unshift(){
 	document.getElementById("content").classList.remove("shift");
 	document.getElementById("menu").classList.remove("shift");

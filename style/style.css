@@ -176,7 +176,7 @@ hr{
     -webkit-box-sizing: border-box;
 	position:fixed;
 	right: -250px;
-	
+	transform: translateX(0px);
 	width: 250px;
 	padding-left: 50px;
 	height: 100%;
@@ -186,7 +186,7 @@ hr{
 }
 
 #menu.shift{
-	right: 0px;
+	transform: translateX(-250px);
 }
 
 .bar1, .bar2, .bar3{
@@ -215,12 +215,13 @@ hr{
 #content{
 	transition:0.5s;
 	right: 0px;
+	transform: translateX(0px);
 	position:relative;
 	min-height:100%;
 }
 
 #content.shift{
-	right: 250px;
+	transform: translateX(-250px);
 }
 
 p.link{
