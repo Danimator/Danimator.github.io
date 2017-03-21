@@ -18,6 +18,7 @@ function toggle(x) {
 }
 
 function link(linkto){
+	unshift();
 	document.body.classList.toggle('fade');
 	setTimeout(function(){window.location.href = linkto;}, 620);
 }
