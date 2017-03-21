@@ -32,3 +32,7 @@ hammer.on('swipeleft', function(ev) {
 hammer.on('swiperight', function(ev) {
 	unshift();
 });
+
+$(document).scroll(function() {
+	document.getElementById("menu").style.top = $(document).scrollTop() + "px";
+});
