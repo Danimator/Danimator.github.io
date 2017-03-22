@@ -20,9 +20,9 @@
 		<aside id='menu' class="">
 			<div class='menuOffset'></div>
 			<p class='link' onclick="link('index.html');">Home</p>
-			<p class='link' onclick="link('about.html');"><b>About Me</b></p>
+			<p class='link' onclick="link('about.html');">About Me</p>
 			<p class='link' onclick="link('projects.html');">Projects</p>
-			<p class='link' onclick="link('contact.html');">Contact Me</p>
+			<p class='link' onclick="link('contact.html');"><b>Contact Me</b></p>
 			<div class='menuFooter'>
 				<hr style='margin-bottom: 10px;'>
 				<p class='link' onclick="location.href='mailto:dzdesignsgraphics@gmail.com'">email</p>
@@ -37,28 +37,21 @@
 
 			</div>
 			<div id="title" onclick="unshift();">
-				<div class='card' style='padding-bottom: 85px;'>
-					<div class='profile'>
-					</div>
-					<h3 class='underlined'>About<b style='font-weight: 400;' class='typeline'>|</b></h3>
-					<p>
-						Hi, I'm Daniel!</b>
-					</p>
-					<p>I’m a student at Killarney Secondary School in <b>Vancouver, BC</b>. I work with <b>C++</b>, <b>Python</b>, and web technologies in order to create experiences and solve problems.</p>
-					<p>
-						I <i>love</i> to code, and I currently sit as the <b>President</b> of my school's <b>Programming Club</b> to share my passion.
-						In the past, I have volunteered as a <b>mentor</b> at the Vancouver Public Library's <b>Coding Buddies</b> program, and I've also mentored Programming 11 students in-class, as a community service student.
-					</p>
-					<p>Currently, I am interested in <b>Artificial Intelligence</b> and developing web apps. I have developed a C++ chess engine, as well as a Connect-Four solver in my spare time. </p>
-					<hr style='margin-top: 20px; margin-bottom: 10px;'>
-					<!--<div class='info_container'>
+				<div class='card' id='contact' style='padding-bottom: 85px;'>
+
+					<h3 class='underlined'>Contact Me<b style='font-weight: 400;' class='typeline'>|</b></h3>
+					<div class='info_container'>
 						<div class='info_head'>
-						
+							Want to get in touch? Email me or find me at these places:
 						</div>
 						<div class='info_body'>
-
+							
+								<span class='contact_link' onclick="location.href='mailto:dzdesignsgraphics@gmail.com'"><b>Email:</b> dzdesignsgraphics@gmail.com</span>
+								<br>
+								<span class='contact_link' onclick="window.open('https://github.com/Danimator')"><b>Github:</b>  github.com/Danimator </span>
+							
 						</div>
-					</div>-->
+					</div>
 				</div>
 			</div>
 			<div id = "footer"></div>
