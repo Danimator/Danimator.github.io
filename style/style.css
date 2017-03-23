@@ -312,7 +312,7 @@ hr{
 	transition: transform 0.3s;
 	border-left: 1px solid rgb(200,200,200);
 	top: 0px;
-	position: absolute !important;
+	position: fixed !important;
 }
 
 #menu.shift{
@@ -347,6 +347,7 @@ hr{
 	right: 0px;
 	transform: translateX(0px);
 	position:relative;
+	overflow-y: hidden;
 	min-height:100%;
 }
 
