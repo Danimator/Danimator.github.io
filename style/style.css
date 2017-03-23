@@ -299,7 +299,7 @@ hr{
 	transition: transform 0.3s;
 	border-left: 1px solid rgb(200,200,200);
 	top: 0px;
-	position:fixed !important;
+	position: absolute !important;
 }
 
 #menu.shift{
