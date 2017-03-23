@@ -34,5 +34,5 @@ hammer.on('swiperight', function(ev) {
 });
 
 $(document).scroll(function() {
-	document.getElementById("menu").style.top = $(document).scrollTop() + "px";
+	document.getElementById("menu").style.marginTop = $(document).scrollTop() + "px";
 });
