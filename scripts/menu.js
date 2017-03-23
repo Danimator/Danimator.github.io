@@ -33,6 +33,7 @@ hammer.on('swiperight', function(ev) {
 	unshift();
 });
 
-$(document).scroll(function() {
-	document.getElementById("menu").style.marginTop = $(document).scrollTop() + "px";
-});
+//$(document).scroll(function() {
+	//document.getElementById("menu").style.top = $(document).scrollTop() + "px";
+//	document.getElementById("menuButton").style.top = ($(document).scrollTop() +50) + "px";
+//});
