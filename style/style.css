@@ -42,6 +42,13 @@ body{
 	background-color: rgb(254,254,254);
 }
 
+::selection {
+  background:rgb(240,150,150);
+}
+::-moz-selection {
+  background: rgb(240,150,150);
+}
+
 body.fade, html.fade{
 	opacity: 0;
 }
@@ -390,6 +397,82 @@ p.link:hover{
 	margin-right: 5px;
 }
 
+.project{
+	padding: 10px 5px 15px 5px;
+	border-bottom: 2px solid rgb(200,200,200);
+}
+
+.projectDescription{
+	margin-top: 12px;
+	font-size: 16px;
+}
+.projectLang{
+	padding: 4px 1px 4px 1px;
+	font-family: DINPro;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.projectLink{
+	padding: 4px 1px 4px 1px;
+	font-family: DINPro;
+	font-size: 15px;
+	font-weight: 500;
+	transition: 0.3s;
+	color: rgb(40,40,40);
+}
+
+.projectLink:hover{
+	color: rgb(230,5,10);
+	cursor: pointer;
+}
+
+.projectImage{
+	height: 250px;
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center; 
+	border-radius: 10px;
+
+	border: 2px dotted rgb(64,64,64);
+}
+
+.projectCover{
+	height: 130px;
+	width: 100%;
+	background-color: rgba(32,32,32,0.8);
+	border-radius: 10px;
+	margin-top: -254px;
+	opacity: 0;
+	border: 2px solid rgba(255,255,255,0.9);
+	transition: opacity 0.5s;
+	text-align: center;
+	font-family: DINPro;
+	color: white;
+	text-transform: uppercase;
+	padding-top: 120px;
+}
+
+.projectCover:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.projectTitle{
+	font-size: 30px;
+	font-family: DINPro;
+	margin-bottom: 10px;
+	margin-top: 25px;
+	color: rgb(32,32,32);
+	transition: 0.5s;
+}
+
+.projectTitle:hover{
+	color: rgb(230,5,10);
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
     #titleCard{
 		width: 50%;
@@ -404,7 +487,19 @@ p.link:hover{
 }
 
 @media screen and (max-width: 800px) {
-	
+	.project{
+		padding: 9px 5px 12px 5px;
+	}
+	.projectImage{
+		height: 180px;
+		background-size: cover;
+	}
+	.projectCover{
+		height: 100px;
+		padding-top: 80px;
+		margin-top: -184px;
+		font-size: 14px;
+	}
 	#contact{
 		transform: translateY(75px);
 		-webkit-transform: translateY(75px);
@@ -444,6 +539,12 @@ p.link:hover{
 	h3{
 		font-size: 28px;
 	}
+	
+	.projectTitle{
+		font-size: 26px;
+		margin-bottom: 6px;
+		margin-top: 20px;
+	}
 	.info{
 		font-size: 16px;
 		margin: 2px 0px 2px 1px;
@@ -451,6 +552,16 @@ p.link:hover{
 	p{
 		font-size: 15px;
 		line-height: 24px;
+	}
+	
+	.projectLink, .projectLang{
+		font-size: 13px;
+	}
+	
+	.projectDescription{
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 23px;
 	}
 	.info_container{
 		font-size: 15px;
@@ -472,6 +583,19 @@ p.link:hover{
 }
 
 @media screen and (max-width: 640px){
+	.project{
+		padding: 7px 5px 9px 5px;
+	}
+	.projectImage{
+		height: 140px;
+		background-size: cover;
+	}
+	.projectCover{
+		height: 75px;
+		padding-top: 65px;
+		margin-top: -144px;
+		font-size: 10px;
+	}
 	#contact{
 		border: none;
 		background-color: rgb(254,254,254);
@@ -496,10 +620,23 @@ p.link:hover{
 	h3{
 		font-size: 20px;
 	}
+	.projectTitle{
+		font-size: 18px;
+		margin-bottom: 3px;
+		margin-top: 15px;
+	}
 	.info{
 		font-size: 12px;
 	}
 	p{
+		font-size: 10px;
+		line-height: 18px;
+	}
+	.projectLink, .projectLang{
+		font-size: 9px;
+	}
+	.projectDescription{
+		margin-top: 7px;
 		font-size: 10px;
 		line-height: 18px;
 	}
