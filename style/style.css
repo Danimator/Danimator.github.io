@@ -177,15 +177,17 @@ p{
 }
 .info_head{
 	width: 220px;
-	margin-right: 30px;
+	padding-right: 20px;
 	float: left;
 	clear: both;
 	border-right: 1px solid rgb(190,190,190);
+	padding-bottom: 30px;
 }
 
 .info_body{
 	margin: 0px;
 	padding: 0px;
+	margin-left: 260px;
 }
 
 
@@ -541,6 +543,10 @@ p.link:hover{
 		padding: 0px;
 		padding-bottom: 10px;
 		border-right: none;
+	}
+
+	.info_body{
+		margin-left: 0px;
 	}
 
 	.underlined::after{
