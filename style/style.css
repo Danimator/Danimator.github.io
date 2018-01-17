@@ -378,6 +378,22 @@ p.link:hover{
 	color: rgb(220, 5, 10);
 }
 
+a:link {
+    color: rgb(220, 5, 10);
+}
+
+a:visited{
+	color: rgb(210, 5, 5);
+}
+
+a:hover{
+	color: rgb(245, 10, 15);
+}
+
+a:active{
+	color: rgb(220, 5, 10);
+}
+
 .menuFooter{
 	position: absolute;
 	bottom: 30px;
